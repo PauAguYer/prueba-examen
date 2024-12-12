@@ -1,0 +1,48 @@
+div.titol{
+    text-align: center;
+    font-size: 10px;
+}
+
+div.text-principal{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+span.L{
+    float: left;
+    font-size: 40px;
+    color: blue;
+}
+
+div.enlace{
+    text-align: center;
+    font-size: 25px;
+}
+
+a{
+    margin-right: 75px;
+}
+
+div.moore{
+    text-align: center;
+}
+
+div img{
+    float: left;
+}
+
+p.moorley{
+    background-color: blue;
+    text-align: left;
+    color: white;
+}
+
+p.azulc{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
