@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fondo-250.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: "top-left top-center top-right" 
+                                 "middle-left middle-center middle-right" 
+                                 "bottom-left bottom-center bottom-right";
+            grid-template-rows: 1fr auto 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            grid-area: top-center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 15px;
+            margin: 10px auto;
+        }
+
+        .quote-box {
+            background-color: #b3e5fc;
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        #top-left { grid-area: top-left; }
+        #top-right { grid-area: top-right; justify-self: end; align-self: start; }
+        #bottom-left { grid-area: bottom-left; }
+        #bottom-right { grid-area: bottom-right; justify-self: end; align-self: end; }
+
+        .quote-text {
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .quote-source {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .center-text {
+            grid-area: middle-center;
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 0 auto;
+            width: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Shakespeare Quotes</h1>
+
+    <div id="top-left" class="quote-box">
+        <div class="quote-text">Love all, trust a few, do wrong to none.</div>
+        <div class="quote-source">All's Well That Ends Well</div>
+    </div>
+
+    <div id="top-right" class="quote-box">
+        <div class="quote-text">What is past is prologue.</div>
+        <div class="quote-source">The Tempest</div>
+    </div>
+
+    <div id="bottom-left" class="quote-box">
+        <div class="quote-text">I say there is no darkness but ignorance.</div>
+        <div class="quote-source">Twelfth Night</div>
+    </div>
+
+    <div id="bottom-right" class="quote-box">
+        <div class="quote-text">We know what we are, but know not what we may be.</div>
+        <div class="quote-source">Hamlet, Prince of Denmark</div>
+    </div>
+
+    <div class="center-text">
+        William Shakespeare (bapt. 26 April 1564 - 23 April 1616) was an English poet, playwright and actor, widely regarded as the greatest writer in the English language and the world’s greatest dramatist. His extant works, including collaborations, consist of approximately 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.
+    </div>
+</body>
+</html>
